@@ -1,11 +1,19 @@
+```java
 package sept24;
 
 class Course {
+
     protected String courseCode;
     protected String courseTitle;
     protected int credit;
 
     protected double feePerCredit = 1000;
+
+    Course() {
+        this.courseCode = " ";
+        this.courseTitle = " ";
+        this.credit = 0;
+    }
 
     public Course(String courseCode, String courseTitle, int credit) {
         this.courseCode = courseCode;
@@ -29,8 +37,11 @@ class TheoryCourse extends Course {
 
     private int numberOfLectures;
 
-    public TheoryCourse(String courseCode, String courseTitle, int credit, int numberOfLectures) {
+    TheoryCourse() {
+        this.numberOfLectures = 0;
+    }
 
+    public TheoryCourse(String courseCode, String courseTitle, int credit, int numberOfLectures) {
         super(courseCode, courseTitle, credit);
         this.numberOfLectures = numberOfLectures;
     }
@@ -41,7 +52,7 @@ class TheoryCourse extends Course {
 
     @Override
     public double calculateCourseFee() {
-        return (credit * feePerCredit) + 500;
+        return credit * feePerCredit; // + 500; why was this stupid extra 500 added? idk !
     }
 }
 
@@ -49,8 +60,11 @@ class LabCourse extends Course {
 
     private int numberOfLabHours;
 
-    public LabCourse(String courseCode, String courseTitle, int credit, int numberOfLabHours) {
+    LabCourse() {
+        this.numberOfLabHours = 0;
+    }
 
+    public LabCourse(String courseCode, String courseTitle, int credit, int numberOfLabHours) {
         super(courseCode, courseTitle, credit);
         this.numberOfLabHours = numberOfLabHours;
     }
@@ -61,12 +75,12 @@ class LabCourse extends Course {
 
     @Override
     public double calculateCourseFee() {
-        return (credit * feePerCredit) +
-                (numberOfLabHours * 200);
+        return credit * feePerCredit;
     }
 }
 
 class CourseDemo {
+
     public static void main(String[] args) {
 
         TheoryCourse theoryCourse = new TheoryCourse(
