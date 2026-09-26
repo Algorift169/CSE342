@@ -1,4 +1,3 @@
-```java
 package sept24;
 
 class Course {
