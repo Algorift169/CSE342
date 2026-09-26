@@ -32,6 +32,10 @@ class Employee {
 class FullTimeEmployee extends Employee {
     double allowance;
 
+    FullTimeEmployee(){
+        this.allowance = 0.0;
+    }
+
     public FullTimeEmployee(String name, int employeeId, double basicSalary, double allowance) {
         super(name, employeeId, basicSalary);
         this.allowance = allowance;
