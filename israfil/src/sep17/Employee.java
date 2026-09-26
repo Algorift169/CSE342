@@ -16,6 +16,12 @@ public class Employee {
     private int employeeId;
     private double basicSalary;
 
+    Employee(){
+        this.name = " ";
+        this.employeeId = 0;
+        this.basicSalary = 0.0;
+    }
+
     public Employee(String name, int employeeId, double basicSalary) {
         this.name = name;
         this.employeeId = employeeId;
