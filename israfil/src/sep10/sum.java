@@ -8,6 +8,6 @@ public class sum {
                 sum += i;
             }
         }
-        System.out.println("sum of even numbers: \n"+sum);        
+        System.out.println("sum of even numbers: \n"+sum);
     }
 }
