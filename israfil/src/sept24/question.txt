@@ -1,3 +1,21 @@
+1. Create a parent class Product with:
+● name
+● price
+● calculatePrice()
+The calculatePrice() method should return the original price.
+Create two subclasses: Electronics Apply a 10% discount. Clothing
+Apply a 20% discount. Use a constructor to object initialization
+both for parent and child class.
+Override calculatePrice() in both subclasses.
+
+2. Create a superclass Employee containing:name,
+employeeId, basicSalary. and a method: calculateSalary().
+Create two subclasses:
+● FullTimeEmployee
+● PartTimeEmployee
+FullTimeEmployee should calculate salary by adding an
+allowance, while PartTimeEmployee should calculate salary
+based on hourly rate and working hours.
 
 3. A university offers different types of courses. Create a
 superclass Course containing:
@@ -19,7 +37,3 @@ LabCourse
 ● displayLabDetails() — displays the number of lab hours.
 ● calculateCourseFee() — override the method to calculate
 the fee for a lab course.
-
-
-
-
