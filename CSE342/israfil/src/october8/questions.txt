@@ -1,0 +1,39 @@
+1. Create a Java program using two different packages,
+company and management. In the company package, create
+an Employee class with four instance variables: name as
+public, salary as protected, department with default access,
+and employeeId as private. The Employee class should also
+contain appropriate methods such as displayInfo(),
+calculateAnnualSalary(), increaseSalary(double percentage),
+and updateDepartment(String department). In the
+management package, create a Manager class that inherits
+from Employee. For the variables that cannot be accessed
+directly from the Manager class, use appropriate methods
+defined in the Employee class. In main() method create a
+Manager object, perform the required operations, and display
+the employee information before and after the updates.
+
+
+
+2. Create a Java program to develop a simple Bank Account
+system using encapsulation and access modifiers. Create two
+packages named bank and application. 
+
+Inside the bank
+package, create a BankAccount class containing a private
+accountNumber, a private balance, and a public
+accountHolder. Provide suitable methods to set and get the
+account number, deposit money, withdraw money, and get
+the current balance. The deposit() method should only accept
+a positive amount, while the withdraw() method should reject
+zero or negative amounts and should not allow a withdrawal
+greater than the available balance.
+
+ Inside the application
+package, create a Main class, import the BankAccount class,
+create an account for a student named Rahim, deposit 10,000,
+withdraw 3,000, and then attempt to withdraw 10,000.
+
+Display appropriate messages for each operation and finally
+display the remaining balance. Ensure that the private
+variables cannot be accessed directly from the Main class.
